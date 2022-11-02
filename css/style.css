@@ -164,6 +164,20 @@ nav {
 }
 
 
+/* FOOTER */
+.top-footer{
+    width: 100%;
+    background-color: #9792e4;
+    height: 400px;
+}
+
+.bottom-footer{
+    width: 100%;
+    background-color: #333333;
+    height: 200px;
+}
+
+
 
 
 
