@@ -241,6 +241,14 @@ footer .test {
         margin: 0rem 1rem 2rem 1rem;
     }
 
+        /* sezione ABOUT US */
+    .about-us-container {
+        display: flex;
+    }
+
+    .about-us-content {
+        margin-top: 0REM;
+    }
 
 }
 
