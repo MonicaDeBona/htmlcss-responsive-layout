@@ -259,7 +259,6 @@ footer .test {
         margin: auto;
     }
 
-
     .intro-card {
         height: 300px;
     }
@@ -267,6 +266,23 @@ footer .test {
     .intro-cards .intro-card:first-child{
         height: 300px;
         width: calc(((100% / 3) * 2 ) - 2rem );
+    }
+
+    .planning-flex {
+        display: flex;
+        align-items: flex-end;
+    }
+
+    .planning-intro {
+        margin-right: 1rem;
+        margin-bottom: 0rem;
+    }
+    
+    .planning-content {
+        height: 500px;
+        border-radius: 20px;
+        padding: 1.5rem;
+
     }
 
 
