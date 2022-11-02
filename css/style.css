@@ -282,7 +282,10 @@ footer .test {
         height: 500px;
         border-radius: 20px;
         padding: 1.5rem;
+    }
 
+    .benefits-card {
+        width: calc(100% / 3 - 2rem);
     }
 
 
