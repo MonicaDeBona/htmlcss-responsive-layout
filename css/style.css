@@ -73,14 +73,12 @@ nav {
 
 /* sezione PLANNING */
 .planning {
-    width: 100%;
     background-color: #9792e4;
     padding: 3rem 0rem;
     margin-top: 4rem;
 }
 
 .planning-intro {
-    width: 100%;
     height: 600px;
     margin-bottom: 2rem;
     background-color: #e07f67;
@@ -88,7 +86,6 @@ nav {
 }
 
 .planning-content {
-    width: 100%;
     height: 500px;
     background-color: #e07f67;
     border-radius: 20px;
@@ -121,18 +118,17 @@ nav {
 
 /* sezione BENEFITS */
 .benefits {
-    width: 100%;
     padding: 3rem 0rem;
     background-color: #9792e4;
 }
 
 .benefits-card {
-    width: 100%;
     height: 400px;
     background-color: #e07f67;
     margin-bottom: 2REM;
     border-radius: 20px;
     padding: 1.5rem;
+    
 }
 
 
@@ -191,6 +187,7 @@ footer .test {
 
 /* TABLET */
 @media screen and (min-width: 768px){
+    /* sezione introduttiva cards */
     .container {
         width: 100%;
         margin: 0 auto;
@@ -206,7 +203,7 @@ footer .test {
     .intro-card {
         background-color:#b5ddff;
         height: 600px;
-        margin: 0rem 1rem 1rem 1rem;
+        margin: 0rem 1rem 2rem 1rem;
         padding: 1.5rem;
         border-radius: 20px;
         width: calc((100% / 3) - 2rem);
@@ -218,9 +215,31 @@ footer .test {
         width: calc(((100% / 3) * 2 ) - 2rem );
     }
 
+    /* sezione planning */
+    .planning-intro {
+        width: 100%;
+    }
 
+    .planning-content {
+        width: 100%;
+    }
 
+    /* sezione benefits */
+    .benefits-cards{
+        display: flex;
+        flex-wrap: wrap;
+        margin-left: -1rem;
+        margin-right: -1rem;
+    }
 
+    .benefits-card {
+        width: calc(100% / 2 - 2rem);
+        height: 400px;
+        background-color: #e07f67;
+        border-radius: 20px;
+        padding: 1.5rem;
+        margin: 0rem 1rem 2rem 1rem;
+    }
 
 
 }
