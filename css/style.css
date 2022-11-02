@@ -254,6 +254,21 @@ footer .test {
 
 /* DESKTOP */
 @media screen and (min-width: 992px){
+    .container {
+        width: 65%;
+        margin: auto;
+    }
+
+
+    .intro-card {
+        height: 300px;
+    }
+
+    .intro-cards .intro-card:first-child{
+        height: 300px;
+        width: calc(((100% / 3) * 2 ) - 2rem );
+    }
+
 
 }
 
