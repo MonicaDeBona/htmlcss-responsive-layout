@@ -72,7 +72,7 @@ p {
 .container {
     width: 100%;
     margin: 0 auto;
-    max-width: 600px;
+    max-width: 500px;
 }
 
 .mobile-padding {
@@ -130,14 +130,16 @@ p {
     color: var(--text-color);
     padding: .7rem 3rem;
     margin-top: 1rem;
+    font-size: 1rem;
 }
 
-
 .main-footer-button {
+    background-color: var(--text-color);
     color: var(--main-accent-color3);
-    color: var(--text-color);
-    padding: 1.5rem 5rem;
-    font-size: 1.3rem;
+    padding: 1.4rem 5rem;
+    font-size: 1rem;
+    margin-bottom: 2rem;
+    font-weight: 700;
 }
 
 
@@ -386,6 +388,7 @@ h5 {
     width: 100%;
     padding: 1.5rem;
     margin-top: 2REM;
+    position: relative;
 }
 
 .about-us-text {
@@ -413,9 +416,17 @@ h5 {
     font-size: 1.1rem;
 }
 
-.v-text {
+.about-us-content h3 {
     color:var(--main-accent-color3);
-    font-size: 1.4rem;
+    font-size: 2rem;
+}
+
+.v-quote {
+    position: absolute;
+    top: 0;
+    right: 150px;
+    font-size: 4rem;
+    color:var(--main-accent-color3);
 }
 
 
@@ -423,56 +434,62 @@ h5 {
 
 
 /* MAIN'S FOOTER */
-.main-footer {
+.top-footer {
     background-color: var(--main-accent-color3);
     width: 100%;
+    padding: 0rem 3rem 2rem;
+}
+
+footer .test {
+    text-align: center;
+}
+
+.top-footer h4 {
+    font-size: 1.5rem;
+    color: #cfcdf2;
+    font-weight: 400;
+    padding: 4rem 0rem 1.5rem;
+}
+
+.top-footer h3{
+    font-size: 2.5rem;
+    color: var(--text-color)
+}
+
+.top-footer h2{
+    font-size: 4rem;
+    color: #fdc15f;
+    padding: 2rem 0rem;
+}
+
+.top-footer p{
+    color: var(--text-color);
     padding-bottom: 2rem;
+}
+
+.top-footer a {
+    color: var(--text-color);
 }
 
 
 
 /* FOOTER */
-footer {
+.bottom-footer {
     background-color: #333333;
     width: 100%;
-    padding-bottom: 2rem;
-}
-
-footer .test {
-    padding-top: 2rem;
+    padding: 0rem 3rem 2rem;
     text-align: center;
 }
 
-.test {
-    padding-bottom: .5rem;
-    text-align: center;
+footer p {
+    padding: 2rem 0rem;
+    color: var(--text-color);
+    line-height: 1.4rem;
 }
 
-.test1{
-    font-size: 1.1rem;
-    color: #5a6e7f;
+.bottom-footer a {
+    color: var(--main-accent-color3);
 }
-
-.test2{
-    font-size: 1.4rem;
-    color: white;
-}
-
-.test3{
-    font-size: 3.5rem;
-    color: #fdc15f;
-}
-
-.test4{
-    color: white;
-}
-
-
-
-.test6{
-    color: white;
-}
-
 
 
 /* !RESPONSIVE MOBILE FIRST */
@@ -576,7 +593,7 @@ footer .test {
     }
 
 
-        /* sezione ABOUT US */
+    /* sezione ABOUT US */
     .about-us-container {
         display: flex;
     }
@@ -589,11 +606,37 @@ footer .test {
         display: flex;
     }
 
-    .about-us-content {
-        flex-basis: 40%;
+    .about-us figure img {
+        width: 220px;
+        height: 220px;
     }
 
-  
+    .about-us-content {
+        flex-basis: 75%;
+    }
+
+    .v-quote {
+        top: 0;
+        right: 68px;
+    }
+
+
+
+    /* sezione FOOTER */
+    .top-footer,
+    .bottom-footer {
+        padding: 0rem 10rem 2rem;
+    }
+
+    .top-footer h2{
+        font-size: 7rem;
+    }
+
+    .top-footer h3{
+        font-size: 3rem;
+        color: var(--text-color)
+    }
+
 }
 
 
@@ -628,7 +671,6 @@ footer .test {
 
 
     /* sezione INTRODUTTIVA con CARDS */
-
     .intro-cards .intro-card:first-child{
         width: calc(((100% / 3) * 2 ) - 2rem );
     }
@@ -651,8 +693,9 @@ footer .test {
     .content {
         flex-basis: 50%;
     }
-    /* sezione PLANNING */
 
+
+    /* sezione PLANNING */
     .planning-flex {
         flex-direction: row;
         justify-content: center;
@@ -691,11 +734,20 @@ footer .test {
     }
 
 
-
+/* sezione ABOUT US */
     .about-us-content {
-        flex-basis: 30%;
+        flex-basis: 40%;
     }
 
+    .about-us figure img {
+        width: 235px;
+        height: 235px;
+    }
+
+    .v-quote {
+        top: 0;
+        right: 80px;
+    }
 
 }
 
