@@ -129,9 +129,15 @@ nav ul li {
 }
 
 .intro-card img {
-    width: 100%;
+    width: 300px;
+    float: inline-end;
 }
 
+.clearfix::after {
+    content: "";
+    clear: both;
+    display: table;
+}
 
 
 /* sezione PLANNING */
@@ -259,22 +265,21 @@ footer .test {
     .intro-cards {
         display: flex;
         flex-wrap: wrap;
+        flex-direction: row;
         margin-left: -1rem;
         margin-right: -1rem;
     }
 
     .intro-card {
         background-color:#b5ddff;
-        height: 600px;
         margin: 0rem 1rem 2rem 1rem;
-        padding: 1.5rem;
+        padding: 2.5rem 2.5rem 0rem;
         border-radius: 20px;
         width: calc((100% / 3) - 2rem);
     }
 
     .intro-cards .intro-card:first-child{
         margin-top: 0rem;
-        height: 600px;
         width: calc(((100% / 3) * 2 ) - 2rem );
     }
 
@@ -348,11 +353,11 @@ footer .test {
     /* sezione INTRODUTTIVA con CARDS */
 
     .intro-card {
-        height: 300px;
+        display: flex;
+
     }
 
     .intro-cards .intro-card:first-child{
-        height: 300px;
         width: calc(((100% / 3) * 2 ) - 2rem );
     }
 
