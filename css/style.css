@@ -197,6 +197,7 @@ nav ul li {
 .card-big .demo-img img {
     width: 100%;
     align-self: flex-end;
+    max-width: 250px;
 }
 
 .icon-size {
@@ -479,6 +480,7 @@ footer .test {
     .card-big .demo-img img {
         width: 100%;
         padding-right: 9.2rem;
+        max-width: 400px;
     }
 
     /* sezione PLANNING */
@@ -576,7 +578,7 @@ footer .test {
 
     /* sezione HEADER&NAV */
     .hamburger-menu {
-        flex-basis: 60%;
+        flex-basis: 50%;
     }
 
     ul li:first-child {
