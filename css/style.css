@@ -121,6 +121,8 @@ p {
     color: var(--text-color);
     padding: .7rem 3rem;
     margin-top: 1rem;
+    font-size: 1rem;
+    font-weight: 700;
 }
 
 .about-us-button {
@@ -353,7 +355,7 @@ h5 {
     text-align: center;
 }
 
-.number {
+.benefits-card h4 {
     font-size: 3rem;
     color: #9792e4 ;
 }
@@ -361,6 +363,10 @@ h5 {
 .benefits-card h3 {
     color: #9792e4;
     padding: 1.5rem 0rem;
+}
+
+.benefits-card p {
+    color: var(--text-color3);
 }
 
 
@@ -389,7 +395,7 @@ h5 {
 .about-us h2 {
     font-size: 3rem;
     padding-bottom: 2rem;
-    color: #9792e4;
+    color: var(--main-accent-color3);
 }
 
 .big-text {
@@ -402,10 +408,13 @@ h5 {
     object-fit: cover;
 }
 
-
+.about-us-text p {
+    line-height: 2.4rem;
+    font-size: 1.1rem;
+}
 
 .v-text {
-    color: #9792e4;
+    color:var(--main-accent-color3);
     font-size: 1.4rem;
 }
 
@@ -415,7 +424,7 @@ h5 {
 
 /* MAIN'S FOOTER */
 .main-footer {
-    background-color: #9792e4;
+    background-color: var(--main-accent-color3);
     width: 100%;
     padding-bottom: 2rem;
 }
