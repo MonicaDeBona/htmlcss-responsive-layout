@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=PT+Sans&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=PT+Sans:wght@400;700&display=swap');
 
 /* RESET */
 *,
@@ -13,13 +13,34 @@ body {
     font-family: 'PT Sans', sans-serif;
 }
 
+h3 {
+    font-size: 1.5rem;
+}
 
-:root{
-    --main-accent-color: #0084fd;
+li {
+    list-style-type: none;
+}
+
+p {
+    line-height: 1.8rem;
 }
 
 
-/* GENERICI */
+
+/* colours*/
+:root{
+    --main-accent-color: #0084fd;
+    --main-accent-color1:#b5ddff;
+    --main-accent-color3: #9792e4;
+    --text-color: white;
+    --text-color2: #fdc15f;
+    --text-color3: #5a6e7f;
+    --text-color2: black;
+}
+
+
+
+/* COMMON */
 .flex {
     display: flex;
 }
@@ -54,21 +75,72 @@ body {
     padding: 0rem 1.5rem;
 }
 
-li {
-    list-style-type: none;
+.fw-700{
+    font-weight: 700;
 }
 
-p {
-    line-height: 1.8rem;
+.bd-none{
+    border: none;
 }
 
+.bd-r20{
+    border-radius: 20px;
+}
+
+.bd-r30{
+    border-radius: 30px;
+}
+
+.bd-r50{
+    border-radius: 50%;
+}
+
+
+
+/* BUTTON*/
+.start-button{
+    padding: .6rem 1rem;
+    background-color: var(--text-color);
+    border: none;
+    font-size: 1rem;
+}
+
+.intro-button {
+    background-color: var(--main-accent-color);
+    color: var(--text-color);
+    padding: .8rem 4rem;
+    margin: 2rem 0rem;
+    font-size: 1rem;
+}
+
+.benefits-button {
+    background-color: var(--main-accent-color3);
+    color: var(--text-color);
+    padding: .7rem 3rem;
+    margin-top: 1rem;
+}
+
+.about-us-button {
+    background-color: var(--main-accent-color3);
+    color: var(--text-color);
+    padding: .7rem 3rem;
+    margin-top: 1rem;
+}
+
+
+.main-footer-button{
+    color: var(--main-accent-color3);
+    color: var(--text-color);
+    padding: 1.5rem 5rem;
+    font-size: 1.3rem;
+}
 
 
 /* HEADER&NAV */
 header {
     background-color: var(--main-accent-color);
     margin-bottom: 3rem;
-    color: white;
+    color: var(--text-color);
 }
 
 header nav {
@@ -78,15 +150,7 @@ header nav {
 
 header a {
     text-decoration: none;
-    color: white;
-}
-
-header nav ul li button {
-        padding: .6rem 1rem;
-        border-radius: 20px;
-        background-color: white;
-        border: none;
-        font-size: 1rem;
+    color: var(--text-color);
 }
 
 nav ul li:not(:first-child) {
@@ -105,9 +169,8 @@ nav ul li {
 
 /* sezione INTRODUTTIVA con CARDS */
 .intro-card {
-    background-color:#b5ddff;
+    background-color: var(--main-accent-color1);
     margin-bottom: 2rem;
-    border-radius: 20px;
     width: 100%;
     align-items: stretch;
 }
@@ -124,23 +187,12 @@ nav ul li {
 
 .intro-card h3 {
     padding-bottom: 2rem;
-    color: #0084fd;
-    font-weight: 900;
-    font-size: 1.3rem;
+    color: var(--main-accent-color);
 }
 
 .intro-card p {
     color: #5a6e7f;
-}
-
-.intro-card button {
-    padding: .8rem 4rem;
-    border-radius: 20px;
-    background-color: var(--main-accent-color);
-    border: none;
-    font-size: 1rem;
-    margin: 2rem 0rem;
-    color: white;
+    font-weight: 700;
 }
 
 .card-big .demo-img img {
@@ -151,7 +203,7 @@ nav ul li {
 .icon-size {
     font-size: 5rem;
     padding-bottom: 2rem;
-    color: #0084fd;
+    color: var(--main-accent-color);
 }
 
 
@@ -182,7 +234,6 @@ nav ul li {
 
 .planning-content {
     background-color: #ffffff;
-    border-radius: 20px;
     padding: 1.5rem;
 }
 
@@ -202,7 +253,6 @@ nav ul li {
 
 .planning-content i {
     background-color: #9792e4;
-    border-radius: 50%;
     padding: 1.5rem;
     font-size: 1.2rem;
     margin: 2rem 0rem 1rem;
@@ -234,7 +284,6 @@ nav ul li {
 .testimonial-card {
     background-color: #9792e4;
     width: 100%;
-    border-radius: 20px;
     padding: 2rem 1rem;
     margin-bottom: 2rem;
 }
@@ -243,7 +292,6 @@ nav ul li {
     width: 150px;
     height: 150px;
     object-fit: cover;
-    border-radius: 50%;
 }
 
 .testimonial-card figure {
@@ -272,7 +320,6 @@ nav ul li {
 .benefits-card {
     background-color: white;
     margin-bottom: 2REM;
-    border-radius: 20px;
     padding: 1.5rem;
     
 }
@@ -295,14 +342,6 @@ nav ul li {
     padding: 1.5rem 0rem;
 }
 
-.benefits-button {
-    background-color: #9792e4;
-    color: white;
-    padding: .7rem 3rem;
-    border-radius: 20px;
-    border: none;
-    margin-top: 1rem;
-}
 
 
 /* sezione ABOUT US */
@@ -340,17 +379,9 @@ nav ul li {
     width: 200px;
     height: 200px;
     object-fit: cover;
-    border-radius: 50%;
 }
 
-.about-us-button {
-    background-color: #9792e4;
-    color: white;
-    padding: .7rem 3rem;
-    border-radius: 20px;
-    border: none;
-    margin-top: 1rem;
-}
+
 
 .v-text {
     color: #9792e4;
@@ -406,14 +437,7 @@ footer .test {
     color: white;
 }
 
-.main-footer-button{
-    color: #9792e4;
-    background-color: white;
-    padding: 1.5rem 5rem;
-    border: none;
-    border-radius: 30px;
-    font-size: 1.3rem;
-}
+
 
 .test6{
     color: white;
@@ -445,7 +469,6 @@ footer .test {
         background-color:#b5ddff;
         margin: 0rem 1rem 2rem 1rem;
         padding: 2.5rem 2.5rem 0rem;
-        border-radius: 20px;
         width: calc((100% / 3) - 2rem);
     }
 
@@ -512,7 +535,6 @@ footer .test {
 
     .benefits-card {
         width: calc(100% / 2 - 2rem);
-        border-radius: 20px;
         padding: 1.5rem;
         margin: 0rem 1rem 2rem 1rem;
     }
@@ -621,7 +643,6 @@ footer .test {
         display: flex;
         flex-direction: column;
         align-items: center;
-        border-radius: 20px;
         padding: 1.5rem;
         width: 40%;
     }
