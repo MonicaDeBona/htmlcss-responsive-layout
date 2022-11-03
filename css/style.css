@@ -270,14 +270,39 @@ nav ul li {
 }
 
 .benefits-card {
-    height: 400px;
-    background-color: #e07f67;
+    background-color: white;
     margin-bottom: 2REM;
     border-radius: 20px;
     padding: 1.5rem;
     
 }
 
+.benefits h2 {
+    color: white;
+    padding: 0rem 0rem 3rem;
+    font-size: 2rem;
+    text-align: center;
+}
+
+.number {
+    font-size: 3rem;
+    color: #9792e4 ;
+}
+
+.benefits-card h3 {
+    font-size: 1.3rem;
+    color: #9792e4;
+    padding: 1.5rem 0rem;
+}
+
+.benefits-button {
+    background-color: #9792e4;
+    color: white;
+    padding: .7rem 3rem;
+    border-radius: 20px;
+    border: none;
+    margin-top: 1rem;
+}
 
 
 /* sezione ABOUT US */
@@ -402,6 +427,10 @@ footer .test {
         margin-bottom: 0rem;
     }
 
+    .testimonial-intro h2 {
+        font-size: 3.5rem;
+    }
+
     /* sezione BENEFITS */
 
     .benefits-cards{
@@ -413,12 +442,15 @@ footer .test {
 
     .benefits-card {
         width: calc(100% / 2 - 2rem);
-        height: 400px;
-        background-color: #e07f67;
         border-radius: 20px;
         padding: 1.5rem;
         margin: 0rem 1rem 2rem 1rem;
     }
+
+    .benefits h2 {
+        font-size: 3.5rem;
+    }
+
 
         /* sezione ABOUT US */
     .about-us-container {
