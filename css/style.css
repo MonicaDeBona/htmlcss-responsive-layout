@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=PT+Sans&display=swap');
+
 /* RESET */
 *,
 *::before,
@@ -7,6 +9,17 @@
     box-sizing: border-box;
 }
 
+body {
+    font-family: 'PT Sans', sans-serif;
+}
+
+
+:root{
+    --main-accent-color: #0084fd;
+}
+
+
+/* GENERICI */
 .flex {
     display: flex;
 }
@@ -36,39 +49,89 @@
     padding: 0rem 1.5rem;
 }
 
-/* HEADER&NAV */
-header {
-    background-color: #0084fd;
-    margin-bottom: 3rem;
+li {
+    list-style-type: none;
 }
 
-nav {
+
+
+/* HEADER&NAV */
+header {
+    background-color: var(--main-accent-color);
+    margin-bottom: 3rem;
+    color: white;
+}
+
+header nav {
     height: 75px;
     width: 100%;
 }
 
-.main-logo {
-    background-color: #67a8e0;
+header a {
+    text-decoration: none;
+    color: white;
 }
 
-.hamburger-menu {
-    background-color: #67a8e0;
+header nav ul li button {
+        padding: .6rem 1rem;
+        border-radius: 20px;
+        background-color: white;
+        border: none;
+        font-size: 1rem;
 }
+
+nav ul li:not(:first-child) {
+    display: none;
+}
+
+nav ul li {
+    font-size: 1.1rem;
+}
+
+.fa-bars {
+    font-size: 25px;
+}
+
+
 
 /* sezione INTRODUTTIVA con CARDS */
 .intro-card {
     background-color:#b5ddff;
-    height: 300px;
     margin-bottom: 2rem;
-    padding: 1.5rem;
+    padding: 2.5rem 2.5rem 0rem;
     border-radius: 20px;
     width: 100%;
+    align-items: stretch;
 }
 
 .intro-cards .intro-card:first-child{
-    height: 600px;
     margin-top: 3rem;
 }
+
+.intro-card h3 {
+    padding-bottom: 2rem;
+    color: #0084fd;
+}
+
+.intro-card p {
+    line-height: 1.8rem;
+    color: #5a6e7f;
+}
+
+.intro-card button {
+    padding: .8rem 4rem;
+    border-radius: 20px;
+    background-color: var(--main-accent-color);
+    border: none;
+    font-size: 1rem;
+    margin: 2rem 0rem;
+    color: white;
+}
+
+.intro-card img {
+    width: 100%;
+}
+
 
 
 /* sezione PLANNING */
@@ -91,6 +154,8 @@ nav {
     border-radius: 20px;
     padding: 1.5rem;
 }
+
+
 
 /* sezione TESTIMONIAL */
 .testimonial {
@@ -116,6 +181,7 @@ nav {
 }
 
 
+
 /* sezione BENEFITS */
 .benefits {
     padding: 3rem 0rem;
@@ -130,6 +196,7 @@ nav {
     padding: 1.5rem;
     
 }
+
 
 
 /* sezione ABOUT US */
@@ -153,12 +220,15 @@ nav {
     margin-top: 2REM;
 }
 
+
+
 /* MAIN'S FOOTER */
 .main-footer {
     background-color: #9792e4;
     width: 100%;
     padding-bottom: 2rem;
 }
+
 
 
 /* FOOTER */
@@ -175,19 +245,12 @@ footer .test {
 
 
 
-
-
-
-
-
-
-
-
 /* !RESPONSIVE MOBILE FIRST */
 
 /* TABLET */
 @media screen and (min-width: 768px){
-    /* sezione introduttiva cards */
+
+    /* sezione INTRODUTTIVA con CARDS */
     .container {
         width: 100%;
         margin: 0 auto;
@@ -215,7 +278,7 @@ footer .test {
         width: calc(((100% / 3) * 2 ) - 2rem );
     }
 
-    /* sezione planning */
+    /* sezione PLANNING */
     .planning-intro {
         width: 100%;
     }
@@ -224,7 +287,7 @@ footer .test {
         width: 100%;
     }
 
-    /* sezione benefits */
+    /* sezione BENEFITS */
     .benefits-cards{
         display: flex;
         flex-wrap: wrap;
@@ -252,12 +315,37 @@ footer .test {
 
 }
 
+
+
 /* DESKTOP */
 @media screen and (min-width: 992px){
+
     .container {
-        width: 65%;
+        width: 61.5%;
         margin: auto;
     }
+
+    /* sezione HEADER&NAV */
+    .hamburger-menu {
+        flex-basis: 60%;
+    }
+
+    ul li:first-child {
+        display: none;
+    }
+
+    nav ul li:not(:first-child) {
+        display: contents;
+    }
+
+    nav ul {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+
+    /* sezione INTRODUTTIVA con CARDS */
 
     .intro-card {
         height: 300px;
@@ -268,6 +356,7 @@ footer .test {
         width: calc(((100% / 3) * 2 ) - 2rem );
     }
 
+    /* sezione PLANNING */
     .planning-flex {
         display: flex;
         align-items: flex-end;
@@ -284,6 +373,7 @@ footer .test {
         padding: 1.5rem;
     }
 
+    /* sezione BENEFITS */
     .benefits-card {
         width: calc(100% / 3 - 2rem);
     }
