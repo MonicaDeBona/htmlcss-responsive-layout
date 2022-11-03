@@ -75,33 +75,32 @@ p {
     padding: 0rem 1.5rem;
 }
 
-.fw-700{
+.fw-700 {
     font-weight: 700;
 }
 
-.bd-none{
+.bd-none {
     border: none;
 }
 
-.bd-r20{
+.bd-r20 {
     border-radius: 20px;
 }
 
-.bd-r30{
+.bd-r30 {
     border-radius: 30px;
 }
 
-.bd-r50{
+.bd-r50 {
     border-radius: 50%;
 }
 
 
 
 /* BUTTON*/
-.start-button{
+.start-button {
     padding: .6rem 1rem;
     background-color: var(--text-color);
-    border: none;
     font-size: 1rem;
 }
 
@@ -128,7 +127,7 @@ p {
 }
 
 
-.main-footer-button{
+.main-footer-button {
     color: var(--main-accent-color3);
     color: var(--text-color);
     padding: 1.5rem 5rem;
@@ -177,12 +176,11 @@ nav ul li {
 
 .intro-cards .intro-card:first-child{
     margin-top: 3rem;
-    padding: 2.5rem 2.5rem 0rem;
+    padding: 1.7rem 1.3rem 0rem;
 }
 
 .intro-card:not(:first-child){
     text-align: center;
-    padding: 2.5rem;
 }
 
 .intro-card h3 {
@@ -193,6 +191,7 @@ nav ul li {
 .intro-card p {
     color: #5a6e7f;
     font-weight: 700;
+    font-size: 1.1rem;
 }
 
 .card-big .demo-img img {
@@ -468,7 +467,7 @@ footer .test {
     .intro-card {
         background-color:#b5ddff;
         margin: 0rem 1rem 2rem 1rem;
-        padding: 2.5rem 2.5rem 0rem;
+        padding: 1.7rem 1rem;
         width: calc((100% / 3) - 2rem);
     }
 
@@ -572,7 +571,7 @@ footer .test {
     .container {
         width: 100%;
         margin: auto;
-        min-width: 1070px;
+        min-width: 1170px;
     }
 
     /* sezione HEADER&NAV */
@@ -610,13 +609,13 @@ footer .test {
     }
     
     .card-big .demo-img img {
-        width: 92%;
+        width: 72%;
         padding-right: 0rem;
-        padding-left: 2rem;
+        padding-left: 0;
+        margin-left: 4rem;
     }
 
     .content {
-        padding-bottom: 1rem;
         flex-basis: 50%;
     }
     /* sezione PLANNING */
