@@ -13,6 +13,10 @@ body {
     font-family: 'PT Sans', sans-serif;
 }
 
+h2 {
+    font-size: 2.2rem;
+}
+
 h3 {
     font-size: 1.5rem;
 }
@@ -172,6 +176,7 @@ nav ul li {
     margin-bottom: 2rem;
     width: 100%;
     align-items: stretch;
+    padding: 1.7rem;
 }
 
 .intro-cards .intro-card:first-child{
@@ -210,7 +215,7 @@ nav ul li {
 /* sezione PLANNING */
 .planning {
     background-color: #9792e4;
-    padding: 3rem 0rem;
+    padding: 7rem 0rem 3rem;
     margin-top: 4rem;
 }
 
@@ -224,7 +229,6 @@ nav ul li {
 
 .planning h2 {
     color: white;
-    font-size: 2rem;
     padding: 4rem 0rem 2rem;
 }
 
@@ -241,21 +245,27 @@ nav ul li {
     width: 100%;
 }
 
+.planning-content p {
+    font-style: italic;
+    font-size: 1.1rem;
+}
+
+.planning-content h3 {
+    padding: 1rem 0rem;
+}
+
 .planning-content h3,
 .planning-content p {
     text-align: center;
 }
 
-.planning-content h3 {
-    padding: 2rem 0rem;
-    font-size: 1.3rem;
-}
+
 
 .planning-content i {
     background-color: #9792e4;
-    padding: 1.5rem;
+    padding: 1.1rem;
     font-size: 1.2rem;
-    margin: 2rem 0rem 1rem;
+    margin: 1rem 0rem 0.5rem;
 }
 
 
@@ -275,11 +285,20 @@ nav ul li {
     text-align: center;
 }
 
+.testimonial-intro h4 {
+    font-size: 1.1rem;
+    font-weight: 400;
+}
+
 .testimonial-intro h2 {
-    font-size: 2rem;
     padding: 2rem 0rem;
     color: #9792e4;
 }
+
+.testimonial-intro p {
+    font-size: 1.2rem;
+}
+
 
 .testimonial-card {
     background-color: #9792e4;
@@ -289,8 +308,8 @@ nav ul li {
 }
 
 .testimonial-card figure img {
-    width: 150px;
-    height: 150px;
+    width: 180px;
+    height: 180px;
     object-fit: cover;
 }
 
@@ -304,9 +323,13 @@ nav ul li {
     color: white;
 }
 
-.pic-name {
+h5 {
     padding-top: 1rem;
-    
+    font-size: 1.2rem;
+}
+
+.quote {
+    font-size: 1.2rem;
 }
 
 
@@ -327,7 +350,6 @@ nav ul li {
 .benefits h2 {
     color: white;
     padding: 0rem 0rem 3rem;
-    font-size: 2rem;
     text-align: center;
 }
 
@@ -337,7 +359,6 @@ nav ul li {
 }
 
 .benefits-card h3 {
-    font-size: 1.3rem;
     color: #9792e4;
     padding: 1.5rem 0rem;
 }
@@ -499,7 +520,7 @@ footer .test {
     }
 
     .planning h2 {
-        font-size: 3.5rem;
+        font-size: 4.5rem;
         padding: 5rem 0rem 3rem;
     }
 
@@ -520,6 +541,7 @@ footer .test {
     .testimonial-card figure {
         margin-bottom: 0rem;
     }
+
 
     .testimonial-intro h2 {
         font-size: 3.5rem;
@@ -633,7 +655,7 @@ footer .test {
     }
 
     .planning-intro {
-        width: 40%;
+        width: 35%;
     }
 
     .planning h2 {
@@ -645,11 +667,12 @@ footer .test {
         flex-direction: column;
         align-items: center;
         padding: 1.5rem;
-        width: 40%;
+        width: 32%;
+        margin-left: 3rem;
     }
 
     .planning-content img {
-        width: 50%;
+        width: 70%;
     }
     
 
